@@ -2,21 +2,20 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        // Các control của Form
+        // Các control hiện có
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button btnRecognize;
         private System.Windows.Forms.Label lblResult;
 
+        // Nút mới để mở Form2 (Webcam)
+        private System.Windows.Forms.Button btnWebcam;
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -28,10 +27,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify 
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -39,6 +34,7 @@
             this.btnOpen = new System.Windows.Forms.Button();
             this.btnRecognize = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnWebcam = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,15 +77,24 @@
             this.lblResult.TabIndex = 3;
             this.lblResult.Text = "Kết quả:";
             // 
+            // btnWebcam - nút mở Form2 (chứa webcam)
+            // 
+            this.btnWebcam.Location = new System.Drawing.Point(350, 170);
+            this.btnWebcam.Name = "btnWebcam";
+            this.btnWebcam.Size = new System.Drawing.Size(100, 30);
+            this.btnWebcam.TabIndex = 4;
+            this.btnWebcam.Text = "Mở Webcam";
+            this.btnWebcam.UseVisualStyleBackColor = true;
+            this.btnWebcam.Click += new System.EventHandler(this.btnWebcam_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 350);
-            this.Controls.Add(this.pictureBox);
-            this.Controls.Add(this.btnOpen);
-            this.Controls.Add(this.btnRecognize);
+            this.Controls.Add(this.btnWebcam);
             this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.btnRecognize);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.Text = "Ứng dụng nhận diện quả tươi/héo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
