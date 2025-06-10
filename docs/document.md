@@ -23,3 +23,11 @@
 6. Kết quả nhận diện
 
 ![alt text](image-8.png)
+
+## Cách chạy app nhanh
+- Chọn Terminal > Run Task
+
+![alt text](image-9.png)
+
+- Chọn task đã cài sẵn: chạy main program. ĐƠi app khởi động
+![alt text](image-10.png)
