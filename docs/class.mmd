@@ -1,0 +1,29 @@
+classDiagram
+    %% Lớp chính chứa giao diện người dùng
+    class Form1 {
+      - knnModel : KNearestNeighbors
+      - labelMapping : Dictionary_int_string
+      - pictureBox : PictureBox
+      - lblResult : Label
+      + Form1()
+      + btnOpen_Click(sender : Object, e : EventArgs) : void
+      + btnRecognize_Click(sender : Object, e : EventArgs) : void
+      + TrainKnnModel() : void
+      + RecognizeImage(image : Image) : string
+      + LoadDataset(datasetPath : string) : List_ImageInstance
+      + ExtractFeatures(imagePath : string) : double[]
+      + ExtractFeaturesFromImage(image : Image) : double[]
+    }
+    
+    %% Lớp dùng để lưu thông tin mỗi mẫu dữ liệu
+    class ImageInstance {
+      - Features : double[]
+      - Label : string
+      + ImageInstance()
+    }
+    
+    %% Quan hệ: Form1 tạo và sử dụng các đối tượng ImageInstance
+    Form1 --> ImageInstance : load/use
+    
+    %% Sự phụ thuộc của Form1 vào thư viện Accord.NET (KNearestNeighbors)
+    Form1 ..> KNearestNeighbors

@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project\\NhanDienHoaQuaTuoi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96BC873F-72D9-EFE3-8872-9AFB42DDCEB0}|MainProgram\\MainProgram.csproj|d:\\project\\nhandienhoaquatuoi\\mainprogram\\mlmodel1.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}",
+      "RelativeMoniker": "D:0:0:{96BC873F-72D9-EFE3-8872-9AFB42DDCEB0}|MainProgram\\MainProgram.csproj|solutionrelative:mainprogram\\mlmodel1.mbconfig||{93FA4DC3-61EC-47AF-B0BA-50CAD3CAF049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MLModel1.mbconfig",
+              "DocumentMoniker": "D:\\Project\\NhanDienHoaQuaTuoi\\MainProgram\\MLModel1.mbconfig",
+              "RelativeDocumentMoniker": "MainProgram\\MLModel1.mbconfig",
+              "ToolTip": "D:\\Project\\NhanDienHoaQuaTuoi\\MainProgram\\MLModel1.mbconfig",
+              "RelativeToolTip": "MainProgram\\MLModel1.mbconfig",
+              "Icon": "7f5c38b0-f0bc-4551-a9a8-b4f467cc4670.000012|",
+              "WhenOpened": "2025-06-09T18:13:40.063Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
